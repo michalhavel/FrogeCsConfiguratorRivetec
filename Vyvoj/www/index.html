@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Forge KND</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="shortcut icon" href="images/CadStudio_vertical_800t.png" type="image/x-icon" />
+
+   
+
+    <link rel="stylesheet" href="css/jstree.style.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+    <!-- <script src="js/jquery.storageapi.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jstree.js"></script> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/jstree.style.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script language="JavaScript" src="js/jquery.min.js"></script>
+    <script language="JavaScript" src="js/jquery.storageapi.min.js"></script>
+    <!-- <script type="text/javascript" src="js/forge.catalog.nd.js"></script> -->
+
+    <!-- <script src="js/babelTest.jsx"></script> -->
+
+    <script language="JavaScript" src="js/scripts.js"></script>
+
+    <!-- <script language="JavaScript" src="js/scripts.js"></script> -->
+    <script src="js/jstree.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
+
+
+
+
+    <!-- The Viewer CSS -->
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=3.3.*" type="text/css">
+
+    <!-- Viewer production -->
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/three.min.js?v=3.3.*"></script>
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js?v=3.3.*"></script>
+
+    <!-- <script type="text/javascript" src="js/oauth.js"></script> -->
+
+
+
+
+    <!-- Developer CSS -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #forgeViewer {
+            position: relative;
+            /* width: 1000px; */
+            height: 700px;
+            margin: 0;
+            /* background-color: #F0F8FF; */
+            align-content: center;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+
+
+</head>
+
+<body class="stylish-color-dark">
+    <h1>test</h1>
+    <div class="row">
+        <!-- <div class="col-1 left"></div> -->
+        <div class="col-1"></div>
+        <div class="btn blue left btn-sm" id="btnHome">
+            Home
+        </div>
+        <!-- <div class="btn yellow btn-sm"> -->
+
+        <a href="#" id="authenticate" class="btn btn-warning btn-sm">
+            <span class="glyphicon glyphicon-user"></span>
+            Log In
+        </a>
+
+        <!-- <div class="col-sm-3" style="height:40px"> -->
+            <div id="progressInfo" class="btn btn-info btn-sm">
+                <span id="progressInfoText">Progress info</span>
+                <span id="progressInfoIcon"></span>
+            </div>
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+
+    <div class="row">
+        <div class="col left">
+            <div class="container-fluid">
+                <h3 class="text-left text-white">Výběr sestavy</h3>
+                
+            </div>
+        </div>
+
+    </div>
+    <div class="row" id="forgeViewer"></div>
+
+    <!-- <script src="js/forge-knd.js"></script> -->
+    <script language="JavaScript"  src="js/babelTest.jsx"></script>
+</body>
+
+</html>
