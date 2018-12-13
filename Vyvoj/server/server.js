@@ -51,4 +51,7 @@ app.set('port', process.env.PORT || 3030); // main port
 var oauth = require('./oauth');
 app.use('/', oauth); // redirect oauth API calls
 
+var stepBuilder = require('./stepBuilder');
+app.use('/', stepBuilder) // redirect STEP builder calls
+
 module.exports = app;

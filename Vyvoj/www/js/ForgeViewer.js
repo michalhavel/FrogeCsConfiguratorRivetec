@@ -5,7 +5,8 @@ var options = {
 }
 
 var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE4LTEyLTA1LTEwLTA0LTM3LWQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlL0JvZHlfT2JhbF8xLmlwdA';
-
+// Button_Click
+// document.getElementById("openViewerBtn").addEventListener("click",function(){
 Autodesk.Viewing.Initializer(options, function onInitialized() {
     Autodesk.Viewing.Document.load(documentId, onDocumentLoadSuccess, onDocumentLoadFailure);
 });
@@ -75,6 +76,7 @@ function onLoadModelError(viewerErrorCode) {
     console.error('onLoadModelError() - errorCode:' + viewerErrorCode);
 }
 
+// }) //EndOfButton_Click
 
 // /////////////////////////////////////////////////////////////////////////////////
 // //
