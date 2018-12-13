@@ -42,14 +42,19 @@
     "lodash": "^4.17.3",
     "node-sass": "^4.5.0",
     "npm-run-all": "^3.1.1",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-redux": "^5.0.1",
-    "react-scripts": "^0.7.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "react-scripts": "^2.1.1",
     "redux": "^3.6.0",
     "scroll-to": "0.0.2",
     "snapsvg": "^0.5.1",
-    "velocity-animate": "^1.4.3"
+    "velocity-animate": "^1.4.3",
+    "jquery": "*",
+    "moment": "*",
+    "oauth": "^0.9.14",
+    "request": "^2.72.0",
+    "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
     "node-sass": "^4.5.0"

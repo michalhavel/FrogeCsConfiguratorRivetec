@@ -1,0 +1,60 @@
+/* Your custom styles */
+.cs-color.bluesum {
+    background-color: #1969cc !important; }
+
+.cs-color.whitesum{
+    background-color: #b3bac2 !important;}
+
+.cs-color.light-blue{
+    background-color: #1d7cc4 !important;}
+
+.cs-img.sum{
+    background-image: "#img\backgroud\noisy-texture-100x100-o42-d14-c-1d7cc4-t0.png";}
+
+    /* input {
+        text-align: center;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        height: 10vw;
+        font-size: 2vw;
+        width: 100vw;
+      }
+      
+      textarea {
+        text-align: center;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 5px;
+        width: 100vw;
+        height: 50vh;
+        font-size: 2vw;
+      }
+      
+      button {
+        border: none;
+        background-color: white;
+        position: fixed;
+        right: 5px;
+        top: 5px;
+        transition: transform .5s;
+      }
+      
+      input:focus {
+        outline: none;
+        color: orange;
+        border-radius: 3px;
+      }
+      
+      textarea:focus {
+        outline: none;
+        color: orange;
+        border-radius: 7px;
+      }
+      
+      button:focus {
+        outline: none;
+        transform: scale(0);
+        transform: rotate(360deg);
+      } */
