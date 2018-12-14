@@ -1,0 +1,5 @@
+
+
+function testFunc(){
+    return "result";
+}
