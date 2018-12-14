@@ -1,5 +1,4 @@
 
-
 // function getForgeToken(callback) {
 //     jQuery.ajax({
 //       url: '/user/token',
