@@ -1,15 +1,32 @@
 // List hodnot pro tabulku
-var myList = [{ id: '1', number: '1111', description: 'Nyt 1' },
-{ id: '2', number: '222', description: 'Nyt 2' }];
+// var myList =
+//     [
+//         { id: '1', number: '1111', description: 'Nyt 1' },
+//         { id: '2', number: '222', description: 'Nyt 2' }
+//     ];
+
+
+// Loads rivets data from server and fill table
+function getRivets(callback) {
+    jQuery.ajax({
+        url: '/rivetec/getrivets',
+        success: function (res) {
+            console.log('rivets portflio', res);
+            callback(res);
+        }
+    });
+
+}
+
 
 // Builds the HTML Table out of myList json data from Ivy restful service.
-function buildHtmlTable() {
-    var columns = addAllColumnHeaders(myList);
+function buildHtmlTable(rivetsData) {
+    var columns = addAllColumnHeaders(rivetsData);
 
-    for (var i = 0; i < myList.length; i++) {
+    for (var i = 0; i < rivetsData.length; i++) {
         var row$ = $('<tr/>');
         for (var colIndex = 0; colIndex < columns.length; colIndex++) {
-            var cellValue = myList[i][columns[colIndex]];
+            var cellValue = rivetsData[i][columns[colIndex]];
 
             if (cellValue == null) { cellValue = ""; }
 
@@ -54,15 +71,12 @@ function selectedRowOnTable() {
     });
 }
 
-// document.getElementById('btnDataImport').addEventListener('click', function () {
-//     clearTable();
-//     buildHtmlTable();
-//     selectedRowOnTable();
-// });
-
-$("#btnDataImport").click(function(){
-    clearTable();
-    buildHtmlTable();
-    selectedRowOnTable();
+// Nacti data CLICK
+$("#btnDataImport").click(function () {
+    getRivets(function (rivetsData) {
+        clearTable();
+        buildHtmlTable(rivetsData);
+        selectedRowOnTable();
+    })
 })
 

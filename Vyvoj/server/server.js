@@ -54,7 +54,8 @@ app.use('/', oauth); // redirect oauth API calls
 var stepBuilder = require('./stepBuilder');
 app.use('/', stepBuilder) // redirect STEP builder calls
 
-var rivetecApi = require('../rivetec/rivetecApi');
-app.use('/', rivetecApi) // redirect rivetec API calls
+var rivetsController = require('../rivetec/rivetsController')();
+app.use('/rivetec/getrivets', rivetsController);
+
 
 module.exports = app;
