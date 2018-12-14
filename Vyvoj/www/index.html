@@ -9,9 +9,9 @@
     <link rel="shortcut icon" href="images/CadStudio_vertical_800t.png" type="image/x-icon" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/jstree.style.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jstree.style.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -22,15 +22,24 @@
     <link rel="stylesheet" href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/jstree.style.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <!-- JQuery -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
     <script language="JavaScript" src="js/jquery.min.js"></script>
     <script language="JavaScript" src="js/jquery.storageapi.min.js"></script>
     <script language="JavaScript" src="js/jstree.js"></script>
-    <script language="JavaScript "src="js/bootstrap.min.js"></script>
-    
+    <script language="JavaScript" src="js/bootstrap.min.js"></script>
+
     <!-- Autodesk -->
     <!-- The Viewer CSS -->
-    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=3.3.*" type="text/css">
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=3.3.*"
+        type="text/css">
 
     <!-- Viewer production -->
     <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/three.min.js?v=3.3.*"></script>
@@ -49,8 +58,8 @@
 
         #forgeViewer {
             position: relative;
-            /* width: 1000px; */
-            height: 700px;
+            width: 500px;
+            height: 500px;
             margin: 0;
             /* background-color: #F0F8FF; */
             align-content: center;
@@ -65,29 +74,83 @@
 <body class="stylish-color-dark">
 
     <div class="row">
-        <!-- <div class="col-1 left"></div> -->
         <div class="col-1"></div>
-        
+
     </div>
 
     <div class="row">
-        <div class="col left">
-            <div class="container-fluid">
-                <h3 class="text-left text-white">Parametry</h3>
+        <div class="col-1"></div>
+        <div class="col flex-column flex-row">
+            <div class="row">
+                <h3 class="text-left text-white">Výběr nýtu</h3>
+            </div>
+            <div class="row">
+                <div class="btn red" id="btnDataImport">Načti data</div>
+            </div>
+            <!-- Tabulka dostupných nýtů -->
+            <div class="row">
+                <table id="csvDataTable" border="5" class="table snap-font white-text">
+                    <!-- <thead>
+                        <tr>
+                            <th class="th-lg white-text">#</th>
+                            <th class="th-lg white-text">Prop1</th>
+                            <th class="th-lg white-text">Prop2</th>
+                            <th class="th-lg white-text">Prop3</th>
+                            <th class="th-lg white-text">Prop4</th>
+                        </tr>
+                    </thead>
+                    <tbody class="white-text" id="myTable">
+                        <tr>
+                            <div class="th scope"></div>
+                            <td>
+                                <div class="btn red">Vybrat</div>
+                            </td>
+                            <td>1</td>
+                            <td>neco</td>
+                            <td>neco</td>
+                            <td>neco</td>
+                        </tr>
+                        <div class="th scope"></div>
+                        <td>
+                            <div class="btn red">Vybrat</div>
+                        </td>
+                        <td>2</td>
+                        <td>neco</td>
+                        <td>neco</td>
+                        <td>neco</td>
+                        <tr>
 
-                </div>
+                        </tr>
+
+                    </tbody> -->
+                
+                </table>
+            </div>
+
+            <!-- End Tabulka dostupných nýtů -->
+
+            <!-- Prohlížeč -->
+            <div class="row center" id="forgeViewer">
+                <!-- End Prohlížeč -->
+
+
             </div>
         </div>
+        <div class="col-1"></div>
 
     </div>
-    <div class="row" id="forgeViewer"></div>
 
-    <div  id="openViewerBtn" class="btn">BUTTON</div>
-    <div  id="exportStepBtn" class="btn">BUTTON STEP</div>
+    <div id="openViewerBtn" class="btn">BUTTON</div>
+    <div id="exportStepBtn" class="btn">BUTTON STEP</div>
+
     <!-- <script src="js/forge-knd.js"></script> -->
     <script language="JavaScript"  src="js/ForgeViewer.js"></script>
     <script language="JavaScript"  src="js/stepBuilder.js"></script>
     <script language="JavaScript"  src="js/_navaraTest.js"></script>
+    <script src="js/importCsvData.js"></script>
+    <script language="JavaScript" src="js/ForgeViewer.js"></script>
+    <script language="JavaScript" src="js/stepBuilder.js"></script>
+
 </body>
 
 </html>
