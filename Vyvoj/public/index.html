@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <title>Forge KND</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+  <link rel="shortcut icon" href="images/CadStudio_vertical_800t.png" type="image/x-icon" />
+
+  <!-- Styles -->
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <!-- <link rel="stylesheet" href="css/jstree.style.min.css" /> -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css">   -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=v3.3.*"
+    type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <!-- Autodesk -->
+  <!-- The Viewer CSS -->
+  <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=3.3.*"
+        type="text/css">
+  <!-- <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/6.*/style.min.css" type="text/css"> -->
+
+  <!-- Viewer production -->
+  <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/three.min.js?v=3.3.*"></script>
+  <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js?v=3.3.*"></script>
+  <!-- <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/6.*/viewer3D.min.js"></script> -->
+
+  <!-- Developer CSS -->
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #forgeViewer {
+      position: relative;
+      width: initial;
+      height: 500px;
+      margin: 0;
+      /* background-color: #F0F8FF; */
+      align-content: center;
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+
+
+</head>
+
+<body class="stylish-color-dark">
+
+  <div class="row">
+    <div class="col-1"></div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col flex-column flex-row">
+      <div class="row">
+        <h3 class="text-left text-white">Výběr nýtu</h3>
+      </div>
+      <div class="row">
+        <div class="btn red" id="btnDataImport">Načti data</div>
+        <div class="btn blue" id="addModelBtn">Add selected</div>
+
+      </div>
+      <div id="root"></div>
+
+    </div>
+
+  </div>
+  <div class="col-1"></div>
+
+  </div>
+
+</body>
+
+</html>

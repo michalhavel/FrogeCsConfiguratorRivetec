@@ -17,6 +17,7 @@
 /////////////////////////////////////////////////////////////////////
 'use strict';
 
+var path = require('path');
 var express = require('express');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
@@ -37,7 +38,7 @@ app.use(session({
 }));
 
 // prepare server routing
-app.use('/', express.static(__dirname + '/../www')); // redirect static calls
+app.use('/', express.static(__dirname + '/../public')); // redirect static calls
 app.use('/js', express.static(__dirname + '/../node_modules/bootstrap/dist/js')); // redirect static calls
 app.use('/js', express.static(__dirname + '/../node_modules/moment/min')); // redirect static calls
 app.use('/js', express.static(__dirname + '/../node_modules/jquery/dist')); // redirect static calls
@@ -45,7 +46,7 @@ app.use('/css', express.static(__dirname + '/../node_modules/bootstrap/dist/css'
 app.use('/css', express.static(__dirname + '/../node_modules/font-awesome/css')) // redirect static calls
 app.use('/fonts', express.static(__dirname + '/../node_modules/font-awesome/fonts')) // redirect static calls
 app.use('/fonts', express.static(__dirname + '/../node_modules/bootstrap/dist/fonts')); // redirect static calls
-app.set('port', process.env.PORT || 3030); // main port
+app.set('port', process.env.PORT || 3000); // main port
 
 // prepare our API endpoint routing
 var oauth = require('./oauth');
@@ -56,6 +57,5 @@ app.use('/', stepBuilder) // redirect STEP builder calls
 
 var rivetsController = require('../rivetec/rivetsController')();
 app.use('/rivetec/getrivets', rivetsController);
-
 
 module.exports = app;
