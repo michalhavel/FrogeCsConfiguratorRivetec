@@ -61,13 +61,14 @@ function addAllColumnHeaders(myList) {
 function clearTable() {
     $("#csvDataTable").empty()
 }
-
+var rowID;
 // Oznaceni radku v tabulce
 function selectedRowOnTable() {
     $("#csvDataTable tr").click(function () {
         $(this).addClass('selected').siblings().removeClass('selected');
         var value = $(this).find('td:first').html();
         console.log(value);
+        rowID = value;
     });
 }
 
