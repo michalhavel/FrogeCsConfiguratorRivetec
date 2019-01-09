@@ -86,15 +86,20 @@ iframe{
    border: 1px solid lightgrey; 
   } */
 
-  td {border: 1px #DDD solid; 
+  /* td {border: 1px #DDD solid; 
     padding: 5px; 
     cursor:pointer;
-    height:2px;
+    height:1px;
     width: fit-content;
     overflow: hidden;
-    font-size: 2px;
+    font-size: 1px;
 
-  }
+  } */
+
+/* #csvDataTable{
+  font-size: smaller;
+  width:max-content;
+} */
 
   .selected {
       background-color: brown;

@@ -11,7 +11,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/jstree.style.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -58,7 +58,7 @@
 
         #forgeViewer {
             position: relative;
-            width: 700px;
+            /* width: 700px; */
             height: 500px;
             margin: 0;
             /* background-color: #F0F8FF; */
@@ -87,12 +87,16 @@
             <div class="row">
                 <div class="btn red" id="btnDataImport">Načti data</div>
                 <div class="btn green" id="addModelBtn">OK</div>
-                <div class="btn blue" id="exportStepBtn" >Stáhnout STEP</div>
+                <div class="btn blue" id="exportStepBtn">Stáhnout STEP</div>
             </div>
-            <!-- Tabulka dostupných nýtů -->
             <div class="row">
-                <table id="csvDataTable" border="5" class="table snap-font white-text">
-                    <!-- <thead>
+
+
+                <!-- Tabulka dostupných nýtů -->
+                <div class="col-4 grey">
+                    <p></p>
+                    <table id="csvDataTable" border="5" class="table snap-font white-text">
+                        <!-- <thead>
                         <tr>
                             <th class="th-lg white-text">#</th>
                             <th class="th-lg white-text">Prop1</th>
@@ -125,16 +129,16 @@
                         </tr>
 
                     </tbody> -->
-                
-                </table>
-            </div>
 
-            <!-- End Tabulka dostupných nýtů -->
+                    </table>
+                </div>
 
-            <!-- Prohlížeč -->
-            <div class="row center" id="forgeViewer">
-                <!-- End Prohlížeč -->
+                <!-- End Tabulka dostupných nýtů -->
 
+                <!-- Prohlížeč -->
+                <div class="col-6" id="forgeViewer">
+                    <!-- End Prohlížeč -->
+                </div>
 
             </div>
         </div>
@@ -143,7 +147,7 @@
     </div>
 
     <!-- <div id="openViewerBtn" class="btn">BUTTON</div> -->
-    
+
 
     <!-- <script src="js/forge-knd.js"></script> -->
     <!-- <script language="JavaScript"  src="js/ForgeViewer.js"></script> -->
