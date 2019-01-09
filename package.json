@@ -1,0 +1,76 @@
+{
+  "name": "viewer-layout",
+  "version": "0.0.1",
+  "private": false,
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node start.js",
+    "dev": "node start.js",
+    "nodemon": "nodemon start.js --ignore www/"
+  },
+  "author": "Michal Havel",
+  "license": "MIT",
+  "proxy": "http://localhost:3030/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalhavel/FrogeCsConfiguratorRivetec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michalhavel/FrogeCsConfiguratorRivetec.git/issues"
+  },
+  "dependencies": {
+    "axios": "^0.15.2",
+    "babel-cli": "6.6.5",
+    "babel-core": "6.4.5",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-stage-0": "6.5.0",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^3.3.7",
+    "classnames": "^2.2.5",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^1.3.2",
+    "cryptiles": "^4.1.3",
+    "csvtojson": "^2.0.8",
+    "dragula": "^3.7.2",
+    "express": "4.13.3",
+    "express-session": "^1.15.6",
+    "font-awesome": "^4.7.0",
+    "forge-apis": "^0.4.1",
+    "forge-data-management": "^2.1.1",
+    "forge-model-derivative": "^2.1.1",
+    "forge-oauth2": "^1.1.2",
+    "forge-oss": "^2.1.0",
+    "formidable": "^1.2.1",
+    "imports-loader": "^0.7.1",
+    "jquery": "*",
+    "lodash": "^4.17.3",
+    "moment": "*",
+    "node-sass": "^4.5.0",
+    "npm-run-all": "^3.1.1",
+    "oauth": "^0.9.14",
+    "popper": "^1.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "react-scripts": "^2.1.1",
+    "redux": "^3.6.0",
+    "request": "^2.72.0",
+    "scroll-to": "0.0.2",
+    "serve-favicon": "^2.3.0",
+    "snapsvg": "^0.5.1",
+    "velocity-animate": "^1.4.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "engines": {
+    "node": "6.7.x",
+    "npm": "3.10.x"
+  }
+}

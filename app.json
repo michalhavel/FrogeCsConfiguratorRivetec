@@ -1,0 +1,19 @@
+{
+	"name": "forge-cs-configurator-rivetec",
+	"description": "Demo Forge CS Configurator",
+	"repository": "https://github.com/michalhavel/FrogeCsConfiguratorRivetec.git",
+	"keywords": [
+		"CS"
+	],
+	"website": "https://cadstudio.cz/",
+	"env": {
+		"FORGE_CLIENT_ID": {
+			"description": "Replace with your FORGE CLIENT ID KEY",
+			"generator": "public"
+		},
+		"FORGE_CLIENT_SECRET": {
+			"description": "Replace with your FORGE CLIENT SECRET KEY",
+			"value": "secret"
+		}
+	}
+}
