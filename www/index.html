@@ -72,7 +72,7 @@
 </head>
 
 <body class="stylish-color-dark">
-
+<!-- <body> -->
     <div class="row">
         <div class="col-1"></div>
 
@@ -84,18 +84,23 @@
             <div class="row">
                 <h3 class="text-left text-white">Výběr nýtu</h3>
             </div>
-            <div class="row">
+            <div class="row grey">
                 <div class="btn red" id="btnDataImport">Načti data</div>
                 <div class="btn green" id="addModelBtn">OK</div>
                 <div class="btn blue" id="exportStepBtn">Stáhnout STEP</div>
+                <div class="btn orange" id="sendEmailBtn">Odeslat poptávku</div>
             </div>
+
             <div class="row">
+                <p></p>
+            </div>
+            <div class="row grey">
 
 
                 <!-- Tabulka dostupných nýtů -->
                 <div class="col-4 grey">
                     <p></p>
-                    <table id="csvDataTable" border="5" class="table snap-font white-text">
+                    <table id="csvDataTable" class="table snap-font white-text">
                         <!-- <thead>
                         <tr>
                             <th class="th-lg white-text">#</th>
@@ -136,7 +141,8 @@
                 <!-- End Tabulka dostupných nýtů -->
 
                 <!-- Prohlížeč -->
-                <div class="col-6" id="forgeViewer">
+                <div class="col-7" id="forgeViewer">
+                 
                     <!-- End Prohlížeč -->
                 </div>
 

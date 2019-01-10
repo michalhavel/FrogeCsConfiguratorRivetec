@@ -76,6 +76,18 @@ iframe{
   height: 100vh;
   width: 60vw;
 }
+th{
+  background-color:dimgrey;
+}
+
+/* html{
+  background: url("/www/images/Let's CAD_1600.png") no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover; 
+  -o-background-size: cover;
+  background-size: cover;
+  -web
+} */
   
   /* table {
    border: 2px solid black;   

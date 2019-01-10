@@ -233,3 +233,53 @@ function downloadURI(uri, name) {
   }
 
 //   downloadURI("data:text/html,HelloWorld!", "helloWorld.txt");
+
+//Odeslání emailu
+$("#sendEmailBtn").click(function(){
+    send();
+})
+
+//Uspořádání těla emailu, rozdělení pole na jednotlivé řádky
+function formatMailOrder(modelID) {
+    // var pole = eliminateDuplicates(listOfProperties);
+    // var out = "";
+    // var index = 0;
+    // for(var i=0;i<listOfProperties;i++){
+    //     index +=1;
+    // };
+
+    // pole.forEach(element => {
+    //     index += +1;
+    //     out += index + ". " + element + "%0A"
+    // });
+    var description;
+    var orderNumber;
+    if (modelID ==="1") {
+        description = "Typ/Popis nýtu: Nýt verze 1";
+        orderNumber = "Objednací číslo: 1111"
+    }
+    else if (modelID === "2") {
+        description = "Typ/Popis nýtu: Nýt verze 2";
+        orderNumber = "Objednací číslo: 222"
+    }
+    else if (modelID==="3") {
+        description = "Typ/Popis nýtu: Nýt verze 3";
+        orderNumber = "Objednací číslo: 333"
+    }
+    else
+    {
+        alert("Pro tuto velikost nýtu nelze objednat automatickou nýtovačku.");
+    }
+    return "Dobrý den," +
+    "%0A" + "%0A" + " tímto u Vás Objednávám automatickou nýtovačku v této konfiguraci: " + "%0A" + "  " + description + "%0A" + "  " + orderNumber +"%0A" + "%0A" + 
+    "S pozdravem" +"%0A" + "%0A" + "Váš Zákazník!" ;
+}
+
+//Funkce vygenerování emailu s objednávkou
+function send() {
+    setTimeout(function () {
+        // window.open("mailto:" + document.getElementById('email').value + "?subject=" + document.getElementById('subject').value + "&body=" + document.getElementById('message').value);
+        window.open("mailto:" + "Rivetec - Obchodní oddělení" + "?subject=" + "Objednávka automatické nýtovačky" + "&body=" + formatMailOrder(getRowId()) + "%0A");
+        // window.open("mailto:" + "Rivetec EMAIL???" + "?subject=" + "Objednávka automatické nýtovačky" + "&body=" + formatMailOrder() + "%0A");
+    }, 320);
+}
